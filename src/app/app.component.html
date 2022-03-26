@@ -1,5 +1,7 @@
 <h1 class="text-center text-info">Iniciando com diretivas</h1>
 
+
+<!-- Diretivas de atributos -->
 <div
 [ngStyle]="{ background: count < 5 ? 'red' : 'gray' }"
 [ngClass]="{ custom: count > 10 }"
@@ -13,3 +15,6 @@
 >
   <h3 class="text-center">Número aleatório: {{ randomNumber }} </h3>
 </div>
+
+<!-- Diretivas estruturais -->
+<h2 class="text-center text-warning" *ngIf="count>= 10">Atenção! poucos segundos para promoção!</h2>
