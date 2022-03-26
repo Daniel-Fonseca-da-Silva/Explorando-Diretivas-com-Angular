@@ -29,3 +29,42 @@
 <ng-template #sorteado>
   <h2 class="text-center text-danger">Seu número não foi o ganhandor</h2>
 </ng-template>
+
+<ul [ngSwitch]="count" class="list-group mx-auto col-3">
+  <li
+    class="list-group-item"
+    *ngSwitchCase="3"
+    >
+    É igual a 3
+  </li>
+  <li
+    class="list-group-item"
+    *ngSwitchCase="5"
+    >
+    É igual a 5
+  </li>
+  <li
+    class="list-group-item"
+    *ngSwitchCase="7"
+    >
+    É igual a 7
+  </li>
+  <li
+    class="list-group-item"
+    *ngSwitchCase="9"
+    >
+    É igual a 9
+  </li>
+  <li
+    class="list-group-item"
+    *ngSwitchCase="11"
+    >
+    É igual a 11
+  </li>
+  <li
+    class="list-group-item"
+    *ngSwitchDefault
+    >
+    Esse é o padrão
+  </li>
+</ul>
