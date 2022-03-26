@@ -1,4 +1,9 @@
 <h1 class="text-center text-info">Iniciando com diretivas</h1>
 
-<h2 class="text-center mt-4">Contador: {{ count }} </h2>
-<h3 class="text-center">Número aleatório: {{ randomNumber }} </h3>
+<div [ngStyle]="{ background: count < 5 ? 'gray' : 'red' }">
+  <h2 class="text-center mt-4">Contador: {{ count }} </h2>
+</div>
+
+<div [ngStyle]="{ color: randomNumber === 10 || randomNumber === 8 || randomNumber === 5 ? 'purple' : 'red' }">
+  <h3 class="text-center">Número aleatório: {{ randomNumber }} </h3>
+</div>

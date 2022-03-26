@@ -15,14 +15,12 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     let interval = setInterval(() => {
       this.count++
-      if(this.count === 60)
+      if(this.count === 10)
         clearInterval(interval)
     }, 1000)
 
-    this.randomNumber = Math.floor(Math.random() * 10);
+    this.randomNumber = Math.floor(Math.random() * 11);
 
   }
-
-
 
 }
