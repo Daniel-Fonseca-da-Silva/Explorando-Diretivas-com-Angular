@@ -2,6 +2,7 @@
 
 
 <!-- Diretivas de atributos -->
+<!-- Muda somente os atributos -->
 <div
 [ngStyle]="{ background: count < 5 ? 'red' : 'gray' }"
 [ngClass]="{ custom: count > 10 }"
@@ -17,4 +18,14 @@
 </div>
 
 <!-- Diretivas estruturais -->
-<h2 class="text-center text-warning" *ngIf="count>= 10">Atenção! poucos segundos para promoção!</h2>
+<!-- Muda a estrutura -->
+<h2 class="text-center text-warning" *ngIf="count >= 10; else menor">Atenção! poucos segundos para promoção!</h2>
+<h2 class="text-center text-danger" *ngIf="randomNumber === 10; else sorteado">Parabéns seus número foi sorteado!</h2>
+
+<ng-template #menor>
+  <h2 class="text-center text-success">Começou!</h2>
+</ng-template>
+
+<ng-template #sorteado>
+  <h2 class="text-center text-danger">Seu número não foi o ganhandor</h2>
+</ng-template>
