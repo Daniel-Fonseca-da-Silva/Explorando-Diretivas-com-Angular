@@ -68,3 +68,21 @@
     Esse é o padrão
   </li>
 </ul>
+
+<ul class="list-group mx-auto col-3 mt-4">
+  <li
+    class="list-group-item"
+    *ngFor="let fruit of fruits"
+    >
+  A fruta escolhida é {{ fruit.name }} e o preço é {{ fruit.price }} $
+  </li>
+</ul>
+
+<ul class="list-group mx-auto col-3 mt-4">
+  <li
+    class="list-group-item"
+    *ngFor="let car of cars"
+    >
+  O carro escolhido é {{ car.name }} do ano de {{ car.year }}
+  </li>
+</ul>
