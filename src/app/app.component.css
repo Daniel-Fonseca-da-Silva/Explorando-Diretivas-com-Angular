@@ -1,0 +1,11 @@
+.custom {
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.customizada {
+  background-color: gray;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

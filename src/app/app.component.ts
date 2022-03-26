@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     let interval = setInterval(() => {
       this.count++
-      if(this.count === 10)
+      if(this.count === 15)
         clearInterval(interval)
     }, 1000)
 
