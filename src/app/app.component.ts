@@ -8,8 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
 
   count = 0
+  randomNumber = 0
 
   constructor() {}
+
+  ngOnInit(): void {
+    let interval = setInterval(() => {
+      this.count++
+      if(this.count === 60)
+        clearInterval(interval)
+    }, 1000)
+
+    this.randomNumber = Math.floor(Math.random() * 10);
+
+  }
 
 
 
