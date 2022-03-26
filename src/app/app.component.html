@@ -86,3 +86,11 @@
   O carro escolhido é {{ car.name }} do ano de {{ car.year }}
   </li>
 </ul>
+
+<ul class="list-group mx-auto col-3 mt-4 mb-4">
+  <ng-template ngFor let-car [ngForOf]="cars">
+    <li class="list-group-item">
+      O carro escolhido é {{ car.name }} do ano de {{ car.year }}
+  </li>
+  </ng-template>
+</ul>
