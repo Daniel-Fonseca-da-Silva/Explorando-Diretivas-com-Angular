@@ -95,7 +95,7 @@
   </ng-template>
 </ul>
 
-<h3 class="text-center">{{ nome }}</h3>
+<h3 appMarcaTexto corDeFundo="orange" corDoTexto="black" class="text-center">{{ nome }}</h3>
 
 <div class="text-center">
   <button class="btn btn-success" (click)="clicado('Daniel')">Clique</button>
@@ -114,5 +114,5 @@
     placeholder="Entre com o valor"
     [(ngModel)]="text"
     >
-  <h4>Saida: {{ text }}</h4>
+  <h4 appMarcaTexto corDoTexto="white" corDeFundo="purple">Saida: {{ text }}</h4>
 </div>
