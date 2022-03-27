@@ -9,6 +9,8 @@ export class AppComponent implements OnInit {
 
   count = 0
   randomNumber = 0
+  nome = "Daniel Fonseca da Silva"
+  click = false
   fruits = [
     {
       name: 'Banana',
@@ -81,6 +83,11 @@ export class AppComponent implements OnInit {
     }, 1000)
     this.randomNumber = Math.floor(Math.random() * 11);
     console.log(this.fruits)
+  }
+
+  public clicado(nome: string): void {
+    console.log('Botão clicado por', nome);
+    this.click = true
   }
 
 }
