@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   randomNumber = 0
   nome = "Daniel Fonseca da Silva"
   click = false
+  text = ''
   fruits = [
     {
       name: 'Banana',

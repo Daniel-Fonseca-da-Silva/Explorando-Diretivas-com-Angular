@@ -104,3 +104,15 @@
 <h4 class="text-center" *ngIf="click === true" >
   O botoão foi clicado: {{click}}
 </h4>
+
+<!-- Two way data binding -->
+<!-- Necessita o modulo formsmodule -->
+<div class="col-md-4 mx-auto text-center mb-4 mt-4">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Entre com o valor"
+    [(ngModel)]="text"
+    >
+  <h4>Saida: {{ text }}</h4>
+</div>
